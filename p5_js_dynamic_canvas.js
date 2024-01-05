@@ -46,14 +46,17 @@ function draw() {
 }
 
 function keyPressed() {
+  
+  /* Customize your zoom-in and zoom-out keys here, or use any other input event listener functions to handle these operations */
+  
   if (key == "z") {
-    
     theScale *= theScaleMultiplier;
     theOffsetX = -((theScale - 1) * theWidth) / theScaleMultiplier;
     theOffsetY = -((theScale - 1) * theHeight) / theScaleMultiplier;
     theDragX *= theScaleMultiplier;
     theDragY *= theScaleMultiplier;
   }
+  
   if (key == "x") {
     theScale /= theScaleMultiplier;
     theOffsetX = -((theScale - 1) * theWidth) / theScaleMultiplier;
